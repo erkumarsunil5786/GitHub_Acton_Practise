@@ -6,5 +6,9 @@ jobs:
     name: deploy to staging
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+      - name: Greeting
+        run: echo "Hello World!!!Good Morning" 
       - name: Print message
         run: echo "Hello from self-hosted GitHub Actions runner"
