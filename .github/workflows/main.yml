@@ -2,7 +2,7 @@ name: My First Github Workflow
 run-name: Run message by @${{ github.actor }}
 on: workflow_dispatch
 jobs:
-  my_job:
+  my_first_job:
     name: deploy to staging
     runs-on: ubuntu-22.04
     steps:
@@ -12,3 +12,12 @@ jobs:
         run: echo "Hello World!!!Good Morning" 
       - name: Print message
         run: echo "Hello from self-hosted GitHub Actions runner"
+   my_second_job:
+     name: deploy to dev 
+     runs-on: ubuntu-latest
+     needs: my_first_job
+     steps:
+       - name: Print message
+         run: "Hello Ubuntu-latest"
+         
+   
