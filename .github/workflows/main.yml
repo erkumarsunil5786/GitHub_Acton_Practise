@@ -1,6 +1,8 @@
 name: My First Github Workflow
 run-name: Run message by @${{ github.actor }}
 on: workflow_dispatch
+env:
+  Name: Sunil
 jobs:
   my_first_job:
     name: deploy to staging
@@ -9,7 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.2
       - name: Greeting
-        run: echo "Hello World!!!Good Morning" 
+        run: |
+          echo "Hello World!!!Good Morning" 
+          echo "This workflow run By $Name"
       - name: Print message
         run: echo "Hello from self-hosted GitHub Actions runner"
   my_second_job:
