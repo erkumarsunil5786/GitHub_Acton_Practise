@@ -2,7 +2,7 @@ name: My First Github Workflow
 run-name: Run message by @${{ github.actor }}
 on: workflow_dispatch
 env:
-  Name: Sunil
+  Name: 'Sunil Kumar'
 jobs:
   my_first_job:
     name: deploy to staging
@@ -23,7 +23,7 @@ jobs:
      continue-on-error: true
      steps:
        - name: Print message
-         run: ech "Hello Ubuntu-latest"
+         run: echo "Hello Ubuntu-latest"
   my_third_job:
     name: deploy to prod
     runs-on: windows-latest
