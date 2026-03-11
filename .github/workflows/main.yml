@@ -29,8 +29,8 @@ jobs:
     runs-on: windows-latest
     needs: my_second_job
     env:
-      COUNTRY: "India"
-      MESSAGE: "Good Morning"
+      COUNTRY: 'India'
+      MESSAGE: 'Good Morning'
     steps:
       - name: Print Message
        run: |
