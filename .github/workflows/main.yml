@@ -20,6 +20,7 @@ jobs:
      name: deploy to dev 
      runs-on: ubuntu-latest
      needs: my_first_job
+     continue-on-error: true
      steps:
        - name: Print message
          run: ech "Hello Ubuntu-latest"
