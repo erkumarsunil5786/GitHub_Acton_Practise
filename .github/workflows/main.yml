@@ -22,7 +22,7 @@ jobs:
      needs: my_first_job
      steps:
        - name: Print message
-         run: echo "Hello Ubuntu-latest"
+         run: ech "Hello Ubuntu-latest"
   my_third_job:
     name: deploy to prod
     runs-on: windows-latest
