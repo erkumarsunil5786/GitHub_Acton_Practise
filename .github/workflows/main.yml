@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: Print Message
        run: |
-          Write-Host "Hello $env:COUNTRY"
-          Write-Host "$env:MESSAGE from Windows Runner""
+         Write-Host "Hello $env:COUNTRY"
+         Write-Host "$env:MESSAGE from Windows Runner""
          
    
