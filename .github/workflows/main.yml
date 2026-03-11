@@ -23,5 +23,12 @@ jobs:
      steps:
        - name: Print message
          run: echo "Hello Ubuntu-latest"
+  my_third_job:
+    name: deploy to prod
+    runs-on: windows-latest
+    needs: my_second_job
+    steps:
+      - name: Print Message
+        run: Write-Host "Hello India, Good morning!"
          
    
