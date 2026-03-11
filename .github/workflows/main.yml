@@ -28,8 +28,13 @@ jobs:
     name: deploy to prod
     runs-on: windows-latest
     needs: my_second_job
+    env:
+      COUNTRY: "India"
+      MESSAGE: "Good Morning"
     steps:
       - name: Print Message
-        run: Write-Host "Hello India, Good morning!"
+       run: |
+          Write-Host "Hello $env:COUNTRY"
+          Write-Host "$env:MESSAGE from Windows Runner""
          
    
