@@ -1,1 +1,12 @@
+name: Terraform Infra Workflow
+run-name: Run message by @${{ github.actor }}
+on: workflow_dispatch
+env:
+  name: 'sunil kumar'
+jobs:
+  my_fist_job 
+    name: deploy to test
+    runs-on: ubuntu latest
+    steps:
+
 
