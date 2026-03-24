@@ -1,1 +1,16 @@
-
+name: Application Pipeline
+on:
+  push:
+    branches:
+      - main
+      - devlop
+  pull_request:
+    branches:
+      - devlop
+jobs:
+  build:
+    name: Build Application
+    runs_on: ubuntu-22.04
+    steps:
+    
+  
